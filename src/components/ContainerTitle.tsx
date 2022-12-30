@@ -1,10 +1,11 @@
 import { FC } from 'react';
+import { MainTitleWrap } from './styled';
 
 interface IProps {
 	title?: string;
 }
 const ContainerTitle: FC<IProps> = ({ title }) => {
-	return <h1>{title}</h1>;
+	return <MainTitleWrap>{title}</MainTitleWrap>;
 };
 
 export default ContainerTitle;
