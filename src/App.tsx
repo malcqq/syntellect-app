@@ -1,8 +1,14 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
+import { FirstControlContainer, SecondControlContainer } from './containers';
 
 function App() {
-  return <div></div>;
+	return (
+		<>
+			<FirstControlContainer />
+			<SecondControlContainer />
+		</>
+	);
 }
 
 export default App;
