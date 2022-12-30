@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { BtnWrap } from './styled';
 
 interface IProps {
 	onClick: () => void;
@@ -6,7 +7,7 @@ interface IProps {
 	defaultText?: string;
 }
 const Button: FC<IProps> = ({ text, onClick, defaultText = 'кнопка' }) => {
-	return <button onClick={onClick}>{text || defaultText}</button>;
+	return <BtnWrap onClick={onClick}>{text || defaultText}</BtnWrap>;
 };
 
 export default Button;

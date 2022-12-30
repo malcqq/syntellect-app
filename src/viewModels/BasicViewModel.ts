@@ -15,4 +15,7 @@ export class BasicViewModel {
 		} = e;
 		this.controlText = value;
 	};
+	@action clearText = () => {
+		this.controlText = '';
+	};
 }

@@ -1,12 +1,14 @@
-import { FC } from 'react';
+import { FC, ChangeEvent, HTMLAttributes } from 'react';
 
-interface IProps {
+interface IProps extends HTMLAttributes<HTMLElement> {
 	value: string;
-	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: FC<IProps> = ({ value, onChange }) => {
-	return <input type='text' value={value} onChange={onChange} />;
+const Input: FC<IProps> = ({ value, onChange, onClick }) => {
+	return (
+		<input type='text' value={value} onChange={onChange} onClick={onClick} />
+	);
 };
 
 export default Input;

@@ -8,10 +8,6 @@ export class ControlViewModel extends BasicViewModel {
 		makeObservable(this);
 	}
 
-	@action clearText = () => {
-		this.controlText = '';
-	};
-
 	@action replaceText = (replaceableText = 'Hello World') => {
 		this.controlText = replaceableText;
 	};
